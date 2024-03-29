@@ -1,0 +1,98 @@
+{
+  "_from": "git+https://github.com/havesource/cordova-plugin-push.git#master",
+  "_id": "@havesource/cordova-plugin-push@4.0.0-dev.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@havesource/cordova-plugin-push",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/havesource/cordova-plugin-push#master",
+    "rawSpec": "https://github.com/havesource/cordova-plugin-push#master",
+    "saveSpec": "git+https://github.com/havesource/cordova-plugin-push.git#master",
+    "fetchSpec": "https://github.com/havesource/cordova-plugin-push.git",
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/havesource/cordova-plugin-push.git#c3fb5b894afe17a05e21be135961f5831bafb1e0",
+  "_spec": "https://github.com/havesource/cordova-plugin-push#master",
+  "_where": "/Users/n5648/Assorted Project/GerSg3030R3S4-CordovaAndroid11",
+  "author": {
+    "name": "Erisu"
+  },
+  "bugs": {
+    "url": "https://github.com/havesource/cordova-plugin-push/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "@havesource/cordova-plugin-push",
+    "platforms": [
+      "ios",
+      "android",
+      "windows",
+      "browser"
+    ]
+  },
+  "deprecated": false,
+  "description": "Register and receive push notifications.",
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/eslint-parser": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "@cordova/eslint-config": "^4.0.0",
+    "babel-plugin-add-header-comment": "^1.0.3",
+    "fs-extra": "^10.0.0",
+    "jasmine": "^3.9.0",
+    "nodemon": "^2.0.12",
+    "nopt": "^5.0.0",
+    "xml2js": "^0.4.23"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova": ">=10.0.0",
+        "cordova-android": ">=8.0.0",
+        "cordova-ios": ">=5.1.1"
+      },
+      "2.0.0": {
+        "cordova": ">=10.0.0",
+        "cordova-android": ">=8.0.0",
+        "cordova-ios": ">=6.0.0"
+      },
+      "3.0.0": {
+        "cordova": ">=10.0.0",
+        "cordova-android": ">=9.0.0",
+        "cordova-ios": ">=6.0.0"
+      }
+    }
+  },
+  "homepage": "https://github.com/havesource/cordova-plugin-push#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-windows",
+    "cordova-browser"
+  ],
+  "license": "MIT",
+  "name": "@havesource/cordova-plugin-push",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/havesource/cordova-plugin-push.git"
+  },
+  "scripts": {
+    "build": "babel src/js --out-dir www",
+    "build:watch": "nodemon -w ./src/js -e js -x npm run build",
+    "jasmine": "jasmine --config=spec/unit.json",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
+    "test": "npm run build && npm run lint && npm run jasmine"
+  },
+  "types": "./types/index.d.ts",
+  "version": "4.0.0-dev.0"
+}
